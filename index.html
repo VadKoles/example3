@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <title>IMAX</title>
+    <script src="anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <nav>
+            <div class="menu_small_icon">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+            </div>
+
+            <div class="naver">
+                <a href="#afisha" class="navers menu_item scroll">Афиша</a>
+                <a href="" class="navers menu_item scroll">О кинотеатре</a>
+                <a href="#contact" class="navers menu_item scroll">Контакты</a>
+            </div>
+
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+
+            <div class="menu">
+                <a href="#afisha" class="navers menu_item scroll">Афиша</a>
+                <a href="" class="navers menu_item scroll">О кинотеатре</a>
+                <a href="#contact" class="navers menu_item scroll">Контакты</a>
+            </div>
+
+            <img src="images/calendar.png" class="calendar">
+        </nav>
+    </header>
+    <!--Главная-->
+    <div id="darker"></div>
+    <div class="window" id="window-place" data-dis="none">
+        <div class="choice-margin">
+            <h1 class="win-h1">Выберете место</h1>
+            <div id="choice">
+                
+                
+            </div>
+        </div>
+        <div class="payment">
+            <p id="back">&#10006;</p>
+            <form class="form-payment">
+                <h1 class="win-h1">Оплата билетов</h1>
+                <div class="price_result">ИТОГО: 0 &#8381;</div>
+                <input type="text" class="Bcard inp1" placeholder="Номер карты">
+                <input type="text" class="Bcard inp2" placeholder="Срок действия">
+                <input type="password" class="Bcard inp3" placeholder="Код">
+                <button type="button" id="buy" class="buy-win">Оплатить</button>
+            </form>
+        </div>
+    </div>
+    <main>
+        <div class="slider">
+            <div><img class="poster" src="images/pantera.jpg"></div>
+            <div><img class="poster" src="images/avatar.jpg"></div>
+            <div><img class="poster" src="images/poker.jpg"></div>
+        </div>
+        <article id="films">
+            <h1 class="bigg" id="afisha">Афиша кино на завтра</h1>
+            <!--Фильмы-->
+            <div class="row">
+                <div class="container">
+                    <img class="film" src="images/belka.png">
+                    <div class="times">
+                        <div class="time" data-open="time_0" value="250">
+                            <p data-open="time_0" class="film-time">11:10</p>
+                            <p data-open="time_0" class="film-price">250 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_1">
+                            <p data-open="time_1" class="film-time">14:30</p>
+                            <p data-open="time_1" class="film-price">290 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_2">
+                            <p data-open="time_2" class="film-time">17:50</p>
+                            <p data-open="time_2" class="film-price">290 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_3">
+                            <p data-open="time_3" class="film-time">19:20</p>
+                            <p data-open="time_3" class="film-price">330 &#8381;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img class="film" src="images/magic.png">
+                    <div class="times">
+                        <div class="time" data-open="time_4">
+                            <p data-open="time_4" class="film-time">12:20</p>
+                            <p data-open="time_5" class="film-price">290 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_5">
+                            <p data-open="time_5" class="film-time">15:45</p>
+                            <p data-open="time_5" class="film-price">350 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_6">
+                            <p data-open="time_6" class="film-time">19:00</p>
+                            <p data-open="time_6" class="film-price">350 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_7">
+                            <p data-open="time_7" class="film-time">21:10</p>
+                            <p data-open="time_7" class="film-price">400 &#8381;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container">
+                    <img class="film" src="images/elki.png">
+                    <div class="times">
+                        <div class="time" data-open="time_8">
+                            <p data-open="time_8" class="film-time">11:30</p>
+                            <p data-open="time_8" class="film-price">320 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_9">
+                            <p data-open="time_9" class="film-time">14:40</p>
+                            <p data-open="time_9" class="film-price">350 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_10">
+                            <p data-open="time_10" class="film-time">18:00</p>
+                            <p data-open="time_10" class="film-price">400 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_11">
+                            <p data-open="time_11" class="film-time">20:20</p>
+                            <p data-open="time_11" class="film-price">450 &#8381;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img class="film" src="images/ten.png">
+                    <div class="times">
+                        <div class="time" data-open="time_12">
+                            <p data-open="time_12" class="film-time">12:00</p>
+                            <p data-open="time_12" class="film-price">320 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_13">
+                            <p data-open="time_13" class="film-time">15:10</p>
+                            <p data-open="time_13" class="film-price">350 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_14">
+                            <p data-open="time_14" class="film-time">18:00</p>
+                            <p data-open="time_14" class="film-price">400 &#8381;</p>
+                        </div>
+                        <div class="time" data-open="time_15">
+                            <p data-open="time_15" class="film-time">20:30</p>
+                            <p data-open="time_15" class="film-price">450 &#8381;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article class="sub">
+            <form class="subscribe">
+                <div class="center">
+                    <h1>Подпишись и будешь в курсе всех премьер!</h1>
+                </div>
+                <div class="sub-input">
+                    <input type="text" class="form-sub login" name="login" placeholder="Введите логин">
+                    <input type="password" class="form-sub" name="password" placeholder="Введите пароль">
+                    <button type="submit" class="buy btn" name="button">Подписаться</button>
+                </div>
+                
+            </form>
+        </article>
+
+    </main>
+    <!--Подвал-->
+    <footer>
+        <p class="pF" id="contact">Телефон 88005553535</p>
+        <p class="pF">Адрес: Пионерская 2б</p>
+        <p class="pF">@2022</p>
+    </footer>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
